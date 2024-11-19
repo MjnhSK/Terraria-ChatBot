@@ -96,7 +96,6 @@ def web_scraping(url_lst):
             else:
                 session_dict[key] = (session_dict[key] + ' ' + lines[i]).strip()
         session_dict['Introduction'] = intro
-        del session_dict['References']
         
         # Loot information
         loot_lst = []
@@ -109,6 +108,8 @@ def web_scraping(url_lst):
 
         session_dict['Loot'] = '\n'.join(loot_lst)
         del session_dict['Arms']
+        del session_dict['Trivia']
+        del session_dict['References']
 
         # Convert the dictionary to a string format
         dict_string = '\n'.join([f"{key}: {value}" for key, value in session_dict.items()])
