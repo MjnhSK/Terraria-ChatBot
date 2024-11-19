@@ -1,7 +1,10 @@
 # How to run the Terraria ChatBot:
 
 ### Step 1: Get the Llama3.2:3B
-Access the Ollama website: 
+- Access the Ollama website: https://ollama.com/
+- Install Ollama.
+- Open terminal: ollama run llama3.2
+After downloading the model, you can move on to the next steps.
 
 ### Step 2: Setup the environment
 On your terminal:
